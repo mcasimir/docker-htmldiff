@@ -12,6 +12,7 @@ end
 task :push => :test do
   puts "Pushing mcasimir/htmldiff:v#{VERSION}"
   docker "push mcasimir/htmldiff:v#{VERSION}"
+  docker "push mcasimir/htmldiff:latest"
   puts green "✔ Pushed mcasimir/htmldiff:v#{VERSION}"
 end
 
